@@ -21,7 +21,8 @@ app.use(cookieParser());
 // cors => cross origin resource sharing
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://senior-client.vercel.app"],
+    // origin: ["http://localhost:3000", "https://senior-client.vercel.app"],
+    origin: ["*"],
     credentials: true,
   })
 );
