@@ -21,8 +21,8 @@ app.use(cookieParser());
 // cors => cross origin resource sharing
 app.use(
   cors({
-    // origin: ["http://localhost:3000", "https://senior-client.vercel.app"],
-    origin: '*',
+    origin: ["http://localhost:3000", "https://senior-client.vercel.app"],
+    // origin: '*',
     credentials: true,
 
   })
@@ -46,6 +46,8 @@ app.use(
   analyticsRouter,
   layoutRouter
 );
+
+// bseurl.com/api/v2/users/registration
 
 // testing api
 app.get("/test", (req: Request, res: Response, next: NextFunction) => {
